@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk Production & Cow Trading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>Milk & Cows Trading</h1>
+        <button onclick="showMilkProducts()">Milk Products</button>
+        <button onclick="showCowProducts()">Cows</button>
+    </nav>
+
+    <!-- Milk Products Section -->
+    <div id="milkProducts" class="products-container">
+        <h2>Milk & Dairy Products</h2>
+        <div class="products-grid">
+            <!-- Milk Product Cards -->
+            <div class="product-card">
+                <img src="milk-bottle.png" alt="Milk Bottle">
+                <h3>Fresh Milk</h3>
+                <p>Price: $2.99/L</p>
+                <p>Description: Fresh, organic milk from our farm</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+            <!-- Add more milk product cards as needed -->
+        </div>
+    </div>
+
+    <!-- Cow Section -->
+    <div id="cowProducts" class="products-container" style="display: none;">
+        <h2>Cows for Sale</h2>
+        <div class="products-grid">
+            <!-- Cow Cards -->
+            <div class="product-card">
+                <img src="cow.jpg" alt="Cow">
+                <h3>Holstein Cow</h3>
+                <p>Price: $1,200</p>
+                <p>Description: High milk production breed</p>
+                <button onclick="buyCow()">Buy Now</button>
+            </div>
+            <!-- Add more cow cards as needed -->
+        </div>
+    </div>
+
+    <!-- Cart Counter -->
+    <div class="cart-counter">
+        <p>Cart: <span id="cartItems">0</span> items</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
+
+```css
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.products-container {
+    margin-top: 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.
