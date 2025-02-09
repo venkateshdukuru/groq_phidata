@@ -3,7 +3,7 @@ import requests
 import json
 
 # Groq API credentials
-GROQ_API_KEY = "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"  # Replace with your valid API key
+GROQ_API_KEY = "API_key"  # Replace with your valid API key
 
 # Function to interact with Groq API
 def get_groq_response(user_input, language="python"):
